@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+
+/**
+ * By using display: flex
+ * Logo and nav are in 2 cols
+ * align-items make them
+ * vertically centered
+ * justify-content distribute
+ * horizontal spaces around
+ * and flex-wrap break the
+ * things in two lines in
+ * small screens
+ */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    padding: 20px;
+    font-family:  sans-serif;
+    color: #0BCCDE;
+    background-color:#01214A;
+    margin-right: 15px;
+}
+@media only screen and (min-width: 1020px) {
+    nav { flex-direction: row; }
+  }
+
+/**
+ * The followings are to
+ * make things more
+ * clean and airy
+ * and contents centered
+ */
+.nav ul {
+	margin: 1em 0 .75em;
+	text-align: center;
+}
+.nav li {
+	display: inline;
+}
+.nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+}
+
+header nav ul li {
+   
+    margin-left: 20px;
+}
+h1{
+    font-size: 60px;
+    font-weight: 60px;
+}
+a {
+    color: #0BCCDE;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+  
+}
+
+
+ .nav {
+    overflow: hidden;
+   
+  }
+   .nav  a:hover {
+    
+    color: rgb(241, 235, 147);
+  }
+
+
+/**
+ * Space-around become
+ * Space-between to
+ * distribute space
+ * between the flex-items
+ */
+
+
+.sub-title{
+    font-size: 36px;
+    font-weight: bold;
+    font-family:  sans-serif;
+    color:#01214A;
+    background-color:#0BCCDE;
+    padding: 15px;
+    text-align: right;
+    padding-right: 170px;
+    margin-right: 15px;
+    border-bottom: 4px solid;
+    border-color: #01214A ;
+}
+
+.main{
+    display: flex;
+	align-items: center;
+	
+	flex-wrap: wrap;
+    padding: 5px;
+    margin-right: 15px;
+}
+ 
+    
+
+.about-me{
+    font-size: 40px;
+    font-family:  sans-serif;
+    padding: 5px;
+    margin-top: 1em;
+    text-align: right;    
+    display: inline;
+    border-right: 4px solid;
+    display: inline;
+    color: #0BCCDE;
+}
+p{
+    color:#2d2d2e;
+}
+
+  .paragraph{
+     padding: 5px ;
+     margin: 1em  6em 0 1em;
+     width: 900px;
+     line-height: 2;
+     font-family:  sans-serif;
+     font-size: 20px;
+     text-align:justify;
+     
+  }
+
+  .work-section, .footer{
+    display: flex;
+	align-items: center;
+
+	flex-wrap: wrap;
+    padding: 5px;
+    margin-right: 15px;
+}
+.work, .contact-me {
+    font-size: 40px;
+    font-family:  sans-serif;
+    padding: 5px;
+    margin: 1em  0.5em 0 1em;
+    text-align: right;    
+    display: inline;
+    border-right: 4px solid;
+    display: inline;
+    color: #0BCCDE;
+}
+
+.bubble {
+    position: relative;
+    width: 9em;
+    height: 6em;
+    background:#01214A;
+    border-radius: 10px;
+    padding: 50px 100px 50px 100px;
+    margin-left:15px;
+    
+  }
+  
+  
+  
+
+.display-image{
+    height: 500px;
+    width: 900px;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/23/32/02/500_F_323320272_oKfDpLqERHEdQoWT808T9ZY6hFSXzPOd.jpg);
+    background-size: cover;
+   
+    margin: 1em  6em 0 1em;
+    float:right;
+   display:inline;
+   border: 3px solid;
+   border-color:#0BCCDE;
+}
+ /*footer */
+ .footer{
+     background-color:#0BCCDE ;
+     box-shadow: 10px -10px 5px #01214A;
+     padding-top: 1rem;
+     display: flex;
+     margin-top: 20px;
+ 
+
+ }
+
+ .contact-me{
+    display: inline;
+ }
+ .footer-container{
+    display: inline;
+ }
+
+.social-media{
+    margin: 2rem 6rem;
+    
+ 
+  }
+ 
+ @media (max-width: 1028px){
+ 
+   #title {
+     text-align: center;
+   }
+   .display-image {
+     position: static;
+     transform: rotate(0);
+   }
+ }
