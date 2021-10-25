@@ -116,11 +116,9 @@ a {
 .about-me{
     font-size: 40px;
     font-family:  sans-serif;
-    padding: 5px;
+    padding: 5px 100px;
     margin-top: 1em;
     text-align: right;    
-    display: inline;
-    border-right: 4px solid;
     display: inline;
     color: #0BCCDE;
 }
@@ -131,7 +129,7 @@ p{
   .paragraph{
      padding: 5px ;
      margin: 1em  6em 0 1em;
-     width: 900px;
+     width: 960px;
      line-height: 2;
      font-family:  sans-serif;
      font-size: 20px;
@@ -144,47 +142,79 @@ p{
 	align-items: center;
 
 	flex-wrap: wrap;
-    padding: 5px;
+    padding: 5px 100px;
     margin-right: 15px;
 }
 .work, .contact-me {
     font-size: 40px;
     font-family:  sans-serif;
-    padding: 5px;
-    margin: 1em  0.5em 0 1em;
+    padding: 5px 45px;
+    margin: 1em;
     text-align: right;    
     display: inline;
-    border-right: 4px solid;
-    display: inline;
-    color: #0BCCDE;
+    color: #01214A;
+
 }
 
-.bubble {
-    position: relative;
-    width: 9em;
-    height: 6em;
-    background:#01214A;
-    border-radius: 10px;
-    padding: 50px 100px 50px 100px;
-    margin-left:15px;
-    
+.vl-1 {
+    border-right: 6px solid;
+    color: #01214A;
+    height: 27rem;
   }
-  
+
+.vl-2 {
+    border-right: 6px solid;
+    color: #01214A;
+    height: 30rem;
+  }
+
+
+.vl-3 {
+    border-right: 6px solid;
+    color: #01214A;
+    height: 10rem;
+  }
+ 
   
   
 
 .display-image{
     height: 500px;
-    width: 900px;
+    width: 940px;
     background-image: url(https://as1.ftcdn.net/v2/jpg/03/23/32/02/500_F_323320272_oKfDpLqERHEdQoWT808T9ZY6hFSXzPOd.jpg);
     background-size: cover;
-   
-    margin: 1em  6em 0 1em;
+    padding-left:30px;
+    margin-left: 0  0 0 5em;;
     float:right;
-   display:inline;
-   border: 3px solid;
-   border-color:#0BCCDE;
+    display:inline;
+    border: 3px solid;
+    border-color:#0BCCDE;
 }
+
+.bottom-image{
+     padding-left: 380px ;
+     
+    
+     
+
+}
+
+.image-1, .image-2, .image-3, .image-4{
+    height: 240px;
+    width: 420px;
+    border: 3px solid;
+    border-color:#0BCCDE;
+    margin:15px;
+    display: inline;
+
+}
+.upper-image, .lower-image{
+    display:flex;
+    padding-left: 10px ;
+    margin: 1em  0.5em 0 1em;
+}
+
+
  /*footer */
  .footer{
      background-color:#0BCCDE ;
