@@ -3,9 +3,14 @@
     padding: 0;
     margin: 0;
 }
+:root {
+  --main-bg-color: #01214A;
+  --secondary-bg-color: #0BCCDE;
+  --third-bg-color:#d9dcd6;
+}
 
 body {
-    background-color: #d9dcd6;
+    background-color: var( --third-bg-color);
 }
 
 
@@ -21,13 +26,13 @@ body {
  * small screens
  */
 .header {
-	display: flex;
+
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
     padding: 20px;
     font-family:  sans-serif;
-    color: #0BCCDE;
+    color: var(--secondary-bg-color);
     background-color:#01214A;
     margin-right: 15px;
 }
@@ -58,11 +63,12 @@ header nav ul li {
     margin-left: 20px;
 }
 h1{
-    font-size: 60px;
-    font-weight: 60px;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
 }
 a {
-    color: #0BCCDE;
+    color: var(--secondary-bg-color);
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
@@ -89,11 +95,11 @@ a {
 
 
 .sub-title{
-    font-size: 36px;
+    font-size: 46px;
     font-weight: bold;
-    font-family:  sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color:#01214A;
-    background-color:#0BCCDE;
+    background-color: var(--secondary-bg-color);
     padding: 15px;
     text-align: right;
     padding-right: 170px;
@@ -103,58 +109,45 @@ a {
 }
 
 .main{
-    display: flex;
-	align-items: center;
-	
-	flex-wrap: wrap;
-    padding: 5px;
-    margin-right: 15px;
+	 align-items: center;
+	 flex-wrap: wrap;
+   padding: 5px;
+   margin: 15px;
 }
- 
+ h3{
+  font-size: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 3px 80px;
+  margin-top: 1em;
+  text-align: right;    
+  display: inline;
+ }
     
+.work{
+  padding-right:  140px;
+  margin-top: 25px;
 
-.about-me{
-    font-size: 40px;
-    font-family:  sans-serif;
-    padding: 5px 100px;
-    margin-top: 1em;
-    text-align: right;    
-    display: inline;
-    color: #0BCCDE;
-}
-p{
-    color:#2d2d2e;
 }
 
   .paragraph{
+    color:#2d2d2e;
      padding: 5px ;
-     margin: 1em  6em 0 1em;
-     width: 960px;
+     margin: 1em  4em 0 1em;
+     width: 1100px;
      line-height: 2;
      font-family:  sans-serif;
-     font-size: 20px;
+     font-size: 22px;
      text-align:justify;
      
   }
 
-  .work-section, .footer{
-    display: flex;
-	align-items: center;
-
-	flex-wrap: wrap;
-    padding: 5px 100px;
-    margin-right: 15px;
+  .work-section{
+	  align-items: center;
+	  flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 15px;
 }
-.work, .contact-me {
-    font-size: 40px;
-    font-family:  sans-serif;
-    padding: 5px 45px;
-    margin: 1em;
-    text-align: right;    
-    display: inline;
-    color: #01214A;
 
-}
 
 .vl-1 {
     border-right: 6px solid;
@@ -175,70 +168,100 @@ p{
     height: 10rem;
   }
  
+
   
   
 
 .display-image{
     height: 500px;
-    width: 940px;
+    width: 1100px;
     background-image: url(https://as1.ftcdn.net/v2/jpg/03/23/32/02/500_F_323320272_oKfDpLqERHEdQoWT808T9ZY6hFSXzPOd.jpg);
     background-size: cover;
     padding-left:30px;
-    margin-left: 0  0 0 5em;;
+    margin-left: 1.75em;;
     float:right;
-    display:inline;
     border: 3px solid;
     border-color:#0BCCDE;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.bottom-image{
-     padding-left: 380px ;
-     
+.four-images{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: end;
+ 
+}
+
+.four-images{
+  padding-right:235px;
+ 
+  
+  
+}
+
+.image-1, .image-2,.image-3, .image-4{
+    height: 320px;
+    width: 540px;
+    border: 3px solid;
+    border-color:#0BCCDE;
+    margin:10px;
     
-     
-
-}
-
-.image-1, .image-2, .image-3, .image-4{
-    height: 240px;
-    width: 420px;
-    border: 3px solid;
-    border-color:#0BCCDE;
-    margin:15px;
+    
     display: inline;
-
+  }
+  img:hover {
+    transform: scale(1.3);
+    }
+  .zoom:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
 }
-.upper-image, .lower-image{
-    display:flex;
-    padding-left: 10px ;
-    margin: 1em  0.5em 0 1em;
+ 
+.flex-row {
+  display: flex;
 }
-
 
  /*footer */
  .footer{
      background-color:#0BCCDE ;
      box-shadow: 10px -10px 5px #01214A;
      padding-top: 1rem;
-     display: flex;
+     justify-content : flex-between;
+     flex-wrap: wrap;
      margin-top: 20px;
  
 
  }
 
  .contact-me{
-    display: inline;
+   padding-left:140px;
+   
  }
- .footer-container{
-    display: inline;
- }
+    
+
+
+ 
 
 .social-media{
     margin: 2rem 6rem;
+    font-size: 40px;
+    
     
  
   }
  
+  .copy-right{
+    display:absolute;
+   padding-bottom: 30px;
+  }
+
  @media (max-width: 1028px){
  
    #title {
